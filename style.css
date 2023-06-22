@@ -28,7 +28,7 @@ body {
     flex-shrink: 0;
 }
 
-.choose-score {
+.choose {
     display: flex;
     flex-direction: column;
     align-items: center;
