@@ -110,8 +110,13 @@ h3 {
     }
 
     body {
-        font-size: small;
+        font-size: x-small;
         text-align: center;
+    }
+
+    .body {
+        height: 100%;
+        width: 100%;
     }
 
     .top-bar :nth-child(1) {
@@ -121,6 +126,20 @@ h3 {
     .top-bar :nth-child(2) {
         display: flex;
         justify-content: center;
+    }
+
+    .human-choice {
+        font-size: 80px;
+        padding: 10px;
+        border: #27374d 2px solid;
+        border-radius: 20px;
+    }
+
+    .pc-choice {
+        font-size: 80px;
+        padding: 10px;
+        border: #27374d 2px solid;
+        border-radius: 20px;
     }
 
     .choose {
