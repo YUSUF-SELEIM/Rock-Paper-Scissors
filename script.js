@@ -78,19 +78,39 @@ function playRound() {
     updateButtonsPC(computerSelection);
 }
 
-//UI
+function announceWinner() {
+    if (playerScore == 5) {
+        // document.getElementsByTagName("h3")[0].textContent = "Player Has Won This Round !!";
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("text").textContent =
+            "Player Has Won This Round !!";
+        setTimeout(function () {
+            window.location.reload(1);
+        }, 5000);
+    } else if (pcScore == 5) {
+        // document.getElementsByTagName("h3")[0].textContent = "PC Has Won This Round !!";
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("text").textContent = "PC Has Won This Round !!";
+        setTimeout(function () {
+            window.location.reload(1);
+        }, 5000);
+    }
+}
 document.getElementById("paper").addEventListener("click", () => {
     playRound();
     updateButtonsHuman("PAPER");
     checkWinner();
+    announceWinner();
 });
 document.getElementById("rock").addEventListener("click", () => {
     playRound();
     updateButtonsHuman("ROCK");
     checkWinner();
+    announceWinner();
 });
 document.getElementById("scissors").addEventListener("click", () => {
     playRound();
     updateButtonsHuman("SCISSORS");
     checkWinner();
+    announceWinner();
 });
