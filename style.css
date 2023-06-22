@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #526d82;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-bar {
+    background-color: #27374d;
+    display: flex;
+    justify-content: center;
+}
+
+.top-bar h1 {
+    padding: 30px;
+    font-size: 32px;
+    font-family: "Press Start 2P", cursive;
+    color: #dde6ed;
+    flex-shrink: 0;
+}
+
+.choose-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dde6ed;
+    margin: 10px;
+    font-family: "Press Start 2P", cursive;
+}
+
+.signs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Press Start 2P", cursive;
+    margin-bottom: 30px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    font-family: "Press Start 2P", cursive;
+}
+
+.weapons-choice {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.weapon {
+    font-size: 100px;
+}
+
+button {
+    border: none;
+    background-color: #27374d;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #3b5479;
+}
+
+.scoreboard {
+    color: #dde6ed;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    gap: 60px;
+}
+
+.human-choice {
+    font-size: 120px;
+    padding: 10px;
+    border: #27374d 2px solid;
+    border-radius: 20px;
+}
+
+.pc-choice {
+    font-size: 120px;
+    padding: 10px;
+    border: #27374d 2px solid;
+    border-radius: 20px;
+}
+
+h3 {
+    margin: 20px;
+}
