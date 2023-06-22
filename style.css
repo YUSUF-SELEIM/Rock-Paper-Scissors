@@ -114,6 +114,10 @@ h3 {
         text-align: center;
     }
 
+    .body {
+        margin: 5px;
+    }
+
     .top-bar :nth-child(1) {
         display: none;
     }
